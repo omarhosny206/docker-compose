@@ -2,13 +2,13 @@ version: '3.8'
 
 services:
   redis:
-    image: redis:latest
+    image: redis/redis-stack:latest
     container_name: redis
     ports:
       - 6379:6379
     volumes:
       - redis_data:/data
-    command: redis-server --save 20 1 --requirepass password
+    command: redis-server --save 20 1 --loglevel warning --loadmodule /opt/redis-stack/lib/rejson.so --loadmodule /opt/redis-stack/lib/redisearch.so
     environment:
       - REDIS_PASSWORD=password
     restart: always
