@@ -4,8 +4,8 @@
 ![Docker Compose](https://img.shields.io/badge/docker%20Compose-%23E60DB7ED.svg?style=for-the-badge&logo=docker&logoColor=blue)
 ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?&style=for-the-badge&logo=redis&logoColor=white)
 ![RabbitMQ](https://img.shields.io/badge/rabbitmq-%23FF6600.svg?&style=for-the-badge&logo=rabbitmq&logoColor=white)
-![MySql](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
-![PostgreSql](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-000000?style=for-the-badge&logo=nginx&logoColor=green)
 ![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white)
 
@@ -28,3 +28,11 @@ Run the Docker Compose file for a specific software:
 docker-compose -f software_name.yaml up -d --build
 # e.g. you want to run redis: docker-compose -f redis.yaml up -d --build
 ```
+
+## Available images
+- [Redis](./redis.yaml) (Redis, RedisInsight v2)
+- [RabbitMQ](./rabbitmq.yaml)
+- [MySQL](./mysql.yaml) (MySQL, MySQL Workbench)
+- [PostgreSQL](./postgres.yaml) (PostgreSQL, pgAdmin)
+- [NGINX ](./nginx.yaml)
+- [Kafka](./kafka.yaml) (Kafka, ZooKeeper, Kafka-UI)
