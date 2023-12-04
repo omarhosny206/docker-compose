@@ -5,7 +5,7 @@ services:
     image: confluentinc/cp-zookeeper:latest
     container_name: zookeeper
     ports:
-      - 2181:2181
+      - '2181:2181'
     volumes:
       - zookeeper_data:/var/lib/zookeeper/data
       - zookeeper_logs:/var/lib/zookeeper/log
@@ -37,13 +37,13 @@ services:
     image: provectuslabs/kafka-ui:latest
     container_name: kafka-ui
     ports:
-      - 8090:8080
+      - '8090:8080'
     depends_on:
       - kafka
     environment:
       KAFKA_CLUSTERS_0_NAME: local
       KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:29092
-      DYNAMIC_CONFIG_ENABLED: 'true'
+      DYNAMIC_CONFIG_ENABLED: true
     restart: always
 
 volumes:
