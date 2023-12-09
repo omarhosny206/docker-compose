@@ -35,6 +35,6 @@ docker-compose -f software_name.yaml up -d --build
 - [RabbitMQ](./rabbitmq.yaml)
 - [MySQL](./mysql.yaml) (MySQL, MySQL Workbench)
 - [PostgreSQL](./postgres.yaml) (PostgreSQL, pgAdmin)
-- [MongoDB](./postgres.yaml) (MongoDB, Mongo Express)
+- [MongoDB](./mongo.yaml) (MongoDB, Mongo Express)
 - [NGINX ](./nginx.yaml)
 - [Kafka](./kafka.yaml) (Kafka, ZooKeeper, Kafka-UI)
