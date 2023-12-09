@@ -10,7 +10,7 @@
 ![Nginx](https://img.shields.io/badge/Nginx-000000?style=for-the-badge&logo=nginx&logoColor=green)
 ![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white)
 
-This repository contains Docker Compose configuration files for running multiple softwares using a Docker Compose file named `software_name.yaml (e.g. redis.yaml)`.
+This repository contains Docker Compose configuration files for running multiple software technologies using a Docker Compose file named `file_name.yaml (e.g. redis.yaml)`.
 
 ## Usage
 
@@ -27,7 +27,7 @@ cd docker-compose
 Run the Docker Compose file for a specific software:
 ```bash
 docker-compose -f software_name.yaml up -d --build
-# e.g. you want to run redis: docker-compose -f redis.yaml up -d --build
+# e.g. for redis: docker-compose -f redis.yaml up -d --build
 ```
 
 ## Available images
