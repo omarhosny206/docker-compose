@@ -13,7 +13,6 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: password
     restart: always
 
-
   mongo-express:
     image: mongo-express:latest
     container_name: mongo-express
