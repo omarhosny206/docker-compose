@@ -51,3 +51,4 @@ docker-compose -f docker-compose-dev.yaml up -d --build
 7. **Kafka** [🔗](./kafka) (Kafka, ZooKeeper, Kafka-UI)
     - [Production](./kafka/docker-compose.yaml) (images ==> Kafka, ZooKeeper)
     - [Development](./kafka/docker-compose-dev.yaml) (images ==> Kafka, ZooKeeper, Kafka-UI)
+
