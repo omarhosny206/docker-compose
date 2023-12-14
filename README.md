@@ -10,7 +10,7 @@
 ![Nginx](https://img.shields.io/badge/Nginx-000000?style=for-the-badge&logo=nginx&logoColor=green)
 ![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white)
 
-This repository contains Docker Compose configuration files for running multiple software technologies using a Docker Compose file named `file_name.yaml (e.g. redis.yaml)`.
+This repository contains Docker Compose configuration files for running multiple software technologies using a Docker Compose file named `software_name/docker-compose.yaml (e.g. redis/docker-compose.yaml)`.
 
 ## Usage
 
@@ -26,15 +26,28 @@ cd docker-compose
 
 Run the Docker Compose file for a specific software:
 ```bash
-docker-compose -f software_name.yaml up -d --build
-# e.g. for redis: docker-compose -f redis.yaml up -d --build
+cd software_name # e.g. redis
+# for production environment
+docker-compose up -d --build
+# for development environment <only if file exists>
+docker-compose -f docker-compose-dev.yaml up -d --build
 ```
 
 ## Available images
-- [Redis](./redis.yaml) (Redis, RedisInsight v2)
-- [RabbitMQ](./rabbitmq.yaml)
-- [MySQL](./mysql.yaml) (MySQL, MySQL Workbench)
-- [PostgreSQL](./postgres.yaml) (PostgreSQL, pgAdmin)
-- [MongoDB](./mongo.yaml) (MongoDB, Mongo Express)
-- [NGINX ](./nginx.yaml)
-- [Kafka](./kafka.yaml) (Kafka, ZooKeeper, Kafka-UI)
+1. **Redis** [🔗](./redis) 
+    - [Production](./redis/docker-compose.yaml) (images ==> Redis)
+    - [Development](./redis/docker-compose-dev.yaml) (images ==> Redis, RedisInsight v2)
+2. **RabbitMQ** [🔗](./rabbitmq/docker-compose.yaml)
+3. **MySQL** [🔗](./mysql)
+    - [Production](./mysql/docker-compose.yaml) (images ==> MySQL)
+    - [Development](./mysql/docker-compose-dev.yaml) (images ==> MySQL, MySQL Workbench)
+4. **PostgreSQL** [🔗](./postgres)
+    - [Production](./postgres/docker-compose.yaml) (images ==> PostgreSQL)
+    - [Development](./postgres/docker-compose-dev.yaml) (images ==> PostgreSQL, pgAdmin)
+5. **MongoDB** [🔗](./mongo)
+    - [Production](./mongo/docker-compose.yaml) (images ==> MongoDB)
+    - [Development](./mongo/docker-compose-dev.yaml) (images ==> MongoDB, Mongo Express)
+6. **NGINX** [🔗](./nginx/docker-compose.yaml)
+7. **Kafka** [🔗](./kafka) (Kafka, ZooKeeper, Kafka-UI)
+    - [Production](./kafka/docker-compose.yaml) (images ==> Kafka, ZooKeeper)
+    - [Development](./kafka/docker-compose-dev.yaml) (images ==> Kafka, ZooKeeper, Kafka-UI)
