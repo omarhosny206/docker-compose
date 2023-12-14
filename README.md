@@ -26,7 +26,7 @@ cd docker-compose
 
 Run the Docker Compose file for a specific software:
 ```bash
-cd software_name # e.g. redis
+cd software_name # e.g. cd redis
 # for production environment
 docker-compose up -d --build
 # for development environment <only if file exists>
