@@ -19,7 +19,7 @@ Clone this repository to your local machine:
 git clone https://github.com/omarhosny206/docker-compose.git
 ```
 
-Go inside the repo's directory:
+Go inside the repository's directory:
 ```bash
 cd docker-compose
 ```
