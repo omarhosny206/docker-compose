@@ -11,6 +11,9 @@ services:
       - mysql_data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: password
+      MYSQL_USER: mysql
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: test_db
     restart: always
 
   mysql-workbench:
