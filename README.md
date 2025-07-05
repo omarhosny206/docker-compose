@@ -52,3 +52,4 @@ docker-compose -f docker-compose-dev.yaml up -d --build
     - [Production](./kafka/docker-compose.yaml) (images ==> Kafka, ZooKeeper)
     - [Development](./kafka/docker-compose-dev.yaml) (images ==> Kafka, ZooKeeper, Kafka-UI)
 8. **MinIO** [🔗](./minio/docker-compose.yaml) (images ==> MinIO)
+9. **LocalStack** [🔗](./localstack/docker-compose.yaml) (images ==> LocalStack)
